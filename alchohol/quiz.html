@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vragenstyle.css">
+    <script src="store.js" defer></script>
+    <title>Vragen lijst</title>
+</head>
+<body>
+    <h1 class="bovenste">Alcohol verslaving test</h1>
+
+    <!-- alle vragen -->
+    <form name="quiz" id="quiz">
+        <!--vragen-->
+        <div class="vragenstyle">
+            <p>Vraag 1: Gebruikt u vaker en in grotere hoeveelheden alcohol dan dat u van plan was?</p>
+            <p><input type="radio" name="q1" value="Ja1" onclick="ja()">Ja</p>
+            <p><input type="radio" name="q1" value="Nee1">Nee</p>
+        </div>
+    
+        <div class="vragenstyle">
+            <p>Vraag 2: Is het u gelukt om te minderen of te stoppen met alcoholte nuttigen?</p>
+            <p><input type="radio" name="q2" value="Ja2">Ja</p>
+            <p><input type="radio" name="q2" value="Nee2">Nee</p>
+        </div>
+    
+        <div class="vragenstyle">
+            <p>Vraag 3: Kost het veel tijd om het herstellen van het gebruiken?</p>
+            <p><input type="radio" name="q3" value="Ja3">Ja</p>
+            <p><input type="radio" name="q3" value="Nee3">Nee</p>
+        </div>
+    
+        <div class="vragenstyle">
+            <p>Vraag 4: Heeft u sterk verlangen naar alcohol?</p>
+            <p><input type="radio" name="q4" value="Ja4">Ja</p>
+            <p><input type="radio" name="q4" value="Nee4">Nee</p>
+        </div>
+    
+        <div class="vragenstyle">
+            <p>Vraag 5: Heeft u door gebruik weinig tijd voor werk of school?</p>
+            <p><input type="radio" name="q5" value="Ja5">Ja</p>
+            <p><input type="radio" name="q5" value="Nee5">Nee</p>
+        </div>
+    
+        <div class="vragenstyle">
+            <p>Vraag 6: Blijft u gebruiken onlangs het slecht is voor je sociale omgeving?</p>
+            <p><input type="radio" name="q6" value="Ja6">Ja</p>
+            <p><input type="radio" name="q6" value="Nee6">Nee</p>
+        </div>
+    
+        <div class="vragenstyle">
+            <p>Vraag 7: Heeft u last van het opgeven van werk of hobby's door gebruik van alcohol?</p>
+            <p><input type="radio" name="q7" value="Ja7">Ja</p>
+            <p><input type="radio" name="q7" value="Nee7">Nee</p>
+        </div>
+    
+        <div class="vragenstyle">
+            <p>Vraag 8: Gebruikt u, ook in gevaarlijke situaties?</p>
+            <p><input type="radio" name="q8" value="Ja8">Ja</p>
+            <p><input type="radio" name="q8" value="Nee8">Nee</p>
+        </div>
+    
+        <div class="vragenstyle">
+            <p>Vraag 9: Gebruikt u, onlangs dat u weet dat het slecht is voor uw lichaam en geest?</p>
+            <p><input type="radio" name="q9" value="Ja9">Ja</p>
+            <p><input type="radio" name="q9" value="Nee9">Nee</p>
+        </div>
+    
+        <div class="vragenstyle">
+            <p>Vraag 10: Heeft u grote aantallen alcoholische dranken nodig om het gewenste effect te krijgen?</p>
+            <p><input type="radio" name="q10" value="Ja10">Ja</p>
+            <p><input type="radio" name="q10" value="Nee10">Nee</p>
+        </div>
+    
+        <div class="vragenstyle">
+            <p>Vraag 11: Heeft u er last van dat uw ontwenningsverschijnselen verminderen door het nuttige van alcohol?</p>
+            <p><input type="radio" name="q11" value="Ja11">Ja</p>
+            <p><input type="radio" name="q11" value="Nee11">Nee</p>
+        </div>
+    
+    
+        <!-- resiltaat bttn -->
+    <input type="button" class="rbttn" value="Resultaat!" onclick="resultaat()">
+
+    <input type="button" class="rbttn2" id="vorigeres1" value="vorige resultaat!" onclick="vorigeres()">
+    </form>
+    <!-- de restultaat fotos -->
+
+    
+    <img id="notver" src="foto,s/niet verslaafd.PNG">
+
+    <img id="gematigd" src="foto,s/gematigd.PNG">
+    
+    <img id="Verslaafd" src="foto,s/verslaafd.PNG">
+
+    <div id="res1">U bent niet verslaafd</div>
+    <div id="res2">U moet oppassen met hoeveel u drinkt!</div>
+    <div id="res3">u bent verslaafd</div>
+    <div id="res0">U hebt nog geen test gedaan!</div>
+    <p id="resultaat"></p>
+    <p id="resultaat2"></p>
+</body>
+</html>
